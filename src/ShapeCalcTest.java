@@ -1,24 +1,22 @@
 public class ShapeCalcTest {
 
     public static void main(String[] args) {
-        ShapeCalculator shapeCalculator=new ShapeCalculator();
-        Square square=new Square(5);
-        Rectangle rectangle=new Rectangle(2,4);
+        Square square = new Square(5);
+        double sqArea = square.squareArea();
+        Rectangle rect = new Rectangle(2, 4);
+        double rectPer = rect.rectPerimeter();
         Circle circle = new Circle(2);
-        Triangle triangle=new Triangle(5,8,11);
+        double crAr = circle.circleArea();
+        Triangle triangle = new Triangle(5, 8, 11);
+        double trPer = triangle.trianglePerimeter();
 
-        shapeCalculator.squareArea(square);
-        System.out.println("Square area = " + shapeCalculator.squareArea(square));
+        System.out.println("Square area = " + sqArea);
 
-        shapeCalculator.circleArea(circle);
-        System.out.println("Circle area = " + shapeCalculator.circleArea(circle));
+        System.out.println("Circle area = " + crAr);
 
-        shapeCalculator.trianglePerimeter(triangle);
-        System.out.println("Triangle perimeter = " + shapeCalculator.trianglePerimeter(triangle));
+        System.out.println("Triangle perimeter = " + trPer);
 
-        shapeCalculator.rectPerimeter(rectangle);
-        System.out.println("Rectangle perimeter = " + shapeCalculator.rectPerimeter(rectangle));
-
+        System.out.println("Rectangle perimeter = " + rectPer);
 
     }
 }
