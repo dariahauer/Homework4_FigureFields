@@ -6,7 +6,7 @@ public class Circle {
     }
 
     public double circleArea() {
-        double cirArea = 3.14 * radius * radius;
+        double cirArea = Math.PI * Math.pow(radius,2);
         return cirArea;
     }
 
